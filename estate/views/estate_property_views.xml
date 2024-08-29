@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="action_estate_property" model="ir.actions.act_window">
+        <field name="name">Estate Properties</field>
+        <field name="res_model" >estate.property</field>
+        <field name="view_mode" >tree,form,kanban</field>
+        <field name="context">{'search_default_available': True, 'search_default_current': True}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No data found!
+            </p>
+            <p>
+                Use this menu to have an overview of your Pipeline.
+            </p>
+        </field>
+    </record>
+    <record id="action_estate_property_type" model="ir.actions.act_window">
+        <field name="name">Estate Properties Types</field>
+        <field name="res_model" >estate.property.type</field>
+        <field name="view_mode" >tree,form</field>
+
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No data found!
+            </p>
+            <p>
+                Use this menu to have an overview of your Pipeline.
+            </p>
+        </field>
+    </record>
+    <record id="action_estate_property_tags" model="ir.actions.act_window">
+        <field name="name">Estate Properties Tags</field>
+        <field name="res_model" >estate.property.tag</field>
+        <field name="view_mode" >tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No data found!
+            </p>
+            <p>
+                Use this menu to have an overview of your Pipeline.
+            </p>
+        </field>
+    </record>
+    
+    <record id="estate_property_offer_action" model="ir.actions.act_window">
+        <field name="name">Property Offers</field>
+        <field name="res_model">estate.property.offer</field>
+        <field name="view_mode">tree,form</field>
+        <!-- <field name="domain">[('property_type_id', '=', 'active_id')]</field> -->
+    </record>
+
+    <record id="action_add_offer_properties" model="ir.actions.act_window">
+        <field name="name">Add offer to Properties</field>
+        <field name="res_model">add.offer</field>
+        <field name="view_mode">form</field>
+    </record>
+</odoo>
